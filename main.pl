@@ -276,7 +276,7 @@ sub example_block_spacing {
   Log(SPlt->INFO, "Some other log with Dumper:\n" . SPlt::prefix_var($textData) . "");
   Log(SPlt->INFO_BLOCK_END, "example_block_spacing_3\n");
   Log(SPlt->INFO_BLOCK_END, "example_block_spacing_2\n");
-  Log(SPlt->INFO_BLOCK_END, "example_block_spacing - end\n");
+  Log(SPlt->INFO_BLOCK_END, "examplce_block_spacing - end\n");
 }
 
 sub examples {

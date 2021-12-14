@@ -22,9 +22,15 @@ use File::Basename;
 use Cwd 'abs_path';
 use Getopt::Long qw(GetOptions);
 
-my $cur_dir = dirname(abs_path($0));
+#my $cur_dir = dirname(abs_path($0));
+my $cur_dir = dirname(__FILE__);
+#print `pwd`."$0\n";
 my $conf_path = $cur_dir . '/plt_config.pl';
-require $conf_path;
+#our $cur_dir = dirname(abs_path($0));
+our $proj_base_dir;
+#our $conf_path;
+# print "${conf_path}\n";
+#require $conf_path;
 
 our ${prefix_ws_nmb} = 0;
 our %arg;

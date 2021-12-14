@@ -49,9 +49,12 @@ our $debug = 1;
 #our $devel = 0;
 our $devel = 1;
 
-our $cur_dir = dirname(abs_path($0));
+#our $cur_dir = dirname(abs_path($0));
+my $cur_dir = dirname(__FILE__);
 chomp $cur_dir;
-require $cur_dir . "/plt.pl";
+#require $cur_dir . "/plt.pl";
+
+
 
 our %CF_secret = (
   DEVEL => 1,
